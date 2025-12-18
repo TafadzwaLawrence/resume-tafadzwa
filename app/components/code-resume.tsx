@@ -31,64 +31,69 @@ interface Education {
 
 // The Developer Class Data
 const developerData = {
-  name: "Tafadzwa Chitanga",
-  title: "Full Stack Developer",
-  email: "tafadzwa@example.com",
-  location: "Zimbabwe",
-  github: "github.com/tafadzwa",
-  linkedin: "linkedin.com/in/tafadzwa",
+  name: "Tafadzwa L. Chitanga",
+  title: "Software Engineer",
+  email: "chitangalawrence03@gmail.com",
+  phone: "+263 71 619 7323",
+  location: "Harare, Zimbabwe",
+  github: "github.com/TafadzwaLawrence",
+  linkedin: "linkedin.com/in/tafadzwa-chitanga",
 
   skills: {
-    languages: ["TypeScript", "JavaScript", "Python", "Java", "SQL"],
-    frameworks: ["React", "Next.js", "Node.js", "Express", "Django"],
-    tools: ["Git", "Docker", "AWS", "Firebase", "PostgreSQL"],
-    soft: ["Problem Solving", "Team Leadership", "Communication", "Agile"],
+    languages: ["Java", "TypeScript", "JavaScript", "Python", "Dart", "SQL"],
+    frameworks: ["Flutter", "React", "Next.js", "Node.js", "Spring Boot"],
+    tools: ["Git", "Docker", "Linux", "PostgreSQL", "Firebase", "REST APIs"],
+    soft: ["Problem Solving", "Communication", "Time Management", "Fast Learner"],
   },
 
   experience: [
     {
-      company: "Zimpost",
-      role: "Intern",
-      duration: "2023 - 2024",
+      company: "263Tickets",
+      role: "Junior Software Engineer",
+      duration: "Feb 2024 - Present",
       description: [
-        "Network infrastructure maintenance and support",
-        "Hardware and software troubleshooting",
-        "Trained fellow interns on IT best practices",
+        "API development for ticketing platform",
+        "Android application development in Java and Flutter",
+        "Web development and maintenance",
+        "Testing and debugging applications",
       ],
     },
     {
-      company: "263Tickets",
-      role: "Full Stack Developer",
-      duration: "2024 - Present",
+      company: "Zimpost Ltd Pvt",
+      role: "IT Intern",
+      duration: "Feb 2023 - Feb 2024",
       description: [
-        "Built ticketing platform serving thousands of users",
-        "Developed payment integration systems",
-        "Optimized database queries improving performance by 40%",
+        "Network infrastructure maintenance",
+        "System administration and maintenance",
+        "Web development projects",
+        "Server administration and cybersecurity",
       ],
     },
   ],
 
   projects: [
     {
+      name: "263Tickets Platform",
+      tech: ["Flutter", "Java", "REST APIs"],
+      link: "https://263tickets.com/",
+      description: "Event ticketing and management platform",
+    },
+    {
       name: "Social Beings",
       tech: ["React", "Node.js", "MongoDB"],
       description: "Social platform for community engagement",
-    },
-    {
-      name: "263Tickets",
-      tech: ["Next.js", "PostgreSQL", "Stripe"],
-      link: "https://263tickets.com/",
-      description: "Event ticketing and management platform",
     },
   ],
 
   education: [
     {
-      institution: "University",
-      degree: "Bcomm Information Systems",
-      year: "2020",
+      institution: "Great Zimbabwe University",
+      degree: "B.A. Information Systems",
+      year: "2020 - Present",
     },
   ],
+
+  hobbies: ["Chess", "Reading", "Coding"],
 };
 
 // Typing Animation Hook
@@ -431,6 +436,14 @@ function DeveloperTab({ data }: { data: typeof developerData }) {
         <span className="ml-4">
           <Keyword>public</Keyword> <Property>email</Property><Punctuation>:</Punctuation>{" "}
           <TypeAnnotation>string</TypeAnnotation> <Punctuation>=</Punctuation> <StringValue>{data.email}</StringValue><Punctuation>;</Punctuation>
+        </span>
+      </div>
+
+      <div className="hover:bg-neutral-900/50 transition-colors">
+        <LineNumber num={line++} />
+        <span className="ml-4">
+          <Keyword>public</Keyword> <Property>phone</Property><Punctuation>:</Punctuation>{" "}
+          <TypeAnnotation>string</TypeAnnotation> <Punctuation>=</Punctuation> <StringValue>{data.phone}</StringValue><Punctuation>;</Punctuation>
         </span>
       </div>
 
