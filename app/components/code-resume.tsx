@@ -373,7 +373,7 @@ function DeveloperTab({ data }: { data: typeof developerData }) {
 
       <div className="hover:bg-neutral-900/50 transition-colors">
         <LineNumber num={line++} />
-        <Decorator>Version("2024.12")</Decorator>
+        <Decorator>Version("2025.12")</Decorator>
       </div>
 
       <div className="hover:bg-neutral-900/50 transition-colors">
