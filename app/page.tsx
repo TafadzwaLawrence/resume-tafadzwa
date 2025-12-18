@@ -1,8 +1,5 @@
-import Image from "next/image";
-import AuroraBackgroundDemo from "./components/background";
+import CodeResume from "./components/code-resume";
 
 export default function Home() {
-  return (
-    <AuroraBackgroundDemo/>
-  );
+  return <CodeResume />;
 }
