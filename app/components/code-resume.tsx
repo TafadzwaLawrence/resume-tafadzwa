@@ -261,13 +261,13 @@ export default function CodeResume() {
         </div>
 
         {/* Tabs */}
-        <div className="flex">
+        <div className="flex overflow-x-auto scrollbar-hide">
           {["Developer.ts", "Skills.ts", "Experience.ts", "Projects.ts"].map(
             (tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-4 py-2 text-sm border-r border-neutral-800 transition-colors ${
+                className={`px-3 md:px-4 py-2 text-xs md:text-sm border-r border-neutral-800 transition-colors whitespace-nowrap flex-shrink-0 ${
                   activeTab === tab
                     ? "bg-black text-white border-t-2 border-t-white"
                     : "bg-neutral-900 text-neutral-500 hover:bg-neutral-800"
