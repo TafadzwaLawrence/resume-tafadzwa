@@ -329,8 +329,8 @@ export default function CodeResume() {
       {/* Download CV Button */}
       <div className="max-w-6xl mx-auto mt-6 flex justify-center">
       <a
-        href="/tafadzwacv.pdf"
-        download="TafadzwaChitanga.pdf"
+        href="/TafadzwaChitanga-CV.pdf"
+        download="Tafadzwa_Chitanga_CV.pdf"
         className="bg-white text-black px-6 py-3 font-bold hover:bg-neutral-200 transition-colors flex items-center gap-2 group rounded"
       >
         <span>developer.downloadCV()</span>
