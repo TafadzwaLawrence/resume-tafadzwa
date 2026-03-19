@@ -79,9 +79,10 @@ const developerData = {
       description: "Event ticketing and management platform",
     },
     {
-      name: "Social Beings",
-      tech: ["React", "Node.js", "MongoDB"],
-      description: "Social platform for community engagement",
+      name: "Huts",
+      tech: ["Next.js", "React", "TypeScript", "PostgreSQL"],
+      link: "https://www.huts.co.zw/",
+      description: "Property marketplace for buying, renting, and selling homes in Zimbabwe",
     },
   ],
 
